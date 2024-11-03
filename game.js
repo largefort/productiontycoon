@@ -1,5 +1,5 @@
 // Initialize resources and building variables
-let gold = 0;
+let gold = 10;
 let iron = 0;
 let products = 0;
 let steel = 0;
