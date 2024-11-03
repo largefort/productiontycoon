@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Production Tycoon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Idle Production Tycoon</h1>
+        
+        <div id="resources">
+            <h2>Resources</h2>
+            <p>Gold: <span id="gold">0</span></p>
+            <p>Iron: <span id="iron">0</span></p>
+            <p>Products: <span id="products">0</span></p>
+            <p>Steel: <span id="steel">0</span></p>
+            <p>Wood: <span id="wood">0</span></p>
+        </div>
+        
+        <div id="buildings">
+            <h2>Buildings</h2>
+            <div class="building" title="Produces gold over time.">
+                <button onclick="buyBuilding('mine')">Buy Mine (10 gold)</button>
+                <p>Mines: <span id="mineCount">0</span></p>
+            </div>
+            <div class="building" title="Produces products over time.">
+                <button onclick="buyBuilding('factory')">Buy Factory (100 gold)</button>
+                <p>Factories: <span id="factoryCount">0</span></p>
+            </div>
+            <div class="building" title="Produces iron over time.">
+                <button onclick="buyBuilding('ironMine')">Buy Iron Mine (50 gold)</button>
+                <p>Iron Mines: <span id="ironMineCount">0</span></p>
+            </div>
+            <div class="building" title="Produces steel over time.">
+                <button onclick="buyBuilding('steelMill')">Buy Steel Mill (200 iron)</button>
+                <p>Steel Mills: <span id="steelMillCount">0</span></p>
+            </div>
+            <div class="building" title="Produces wood over time.">
+                <button onclick="buyBuilding('sawmill')">Buy Sawmill (150 gold)</button>
+                <p>Sawmills: <span id="sawmillCount">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
